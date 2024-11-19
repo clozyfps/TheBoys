@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -182,6 +183,7 @@ public class SuperSpeedProcedure {
 						}
 					}
 				}
+				((LivingEntity) entity).getAttribute(ForgeMod.STEP_HEIGHT_ADDITION.get()).setBaseValue(1);
 			} else {
 				if ((entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).SpeedSoundCheck) {
 					{
@@ -200,6 +202,7 @@ public class SuperSpeedProcedure {
 					}
 					entity.getPersistentData().putDouble("speedbuildup", 0);
 				}
+				((LivingEntity) entity).getAttribute(ForgeMod.STEP_HEIGHT_ADDITION.get()).setBaseValue(0.6);
 			}
 		}
 	}
