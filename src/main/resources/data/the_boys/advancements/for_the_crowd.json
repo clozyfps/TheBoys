@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "the_boys:phone_item"
+    },
+    "title": {
+      "translate": "advancements.for_the_crowd.title"
+    },
+    "description": {
+      "translate": "advancements.for_the_crowd.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "for_the_crowd_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

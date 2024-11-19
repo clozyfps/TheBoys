@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.theboys.world.inventory.InstagramMenu;
+import net.mcreator.theboys.procedures.FollowersCounterProcedure;
 import net.mcreator.theboys.network.InstagramButtonMessage;
 import net.mcreator.theboys.TheBoysMod;
 
@@ -68,6 +69,9 @@ public class InstagramScreen extends AbstractContainerScreen<InstagramMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				FollowersCounterProcedure.execute(entity), -42, -2, -1, false);
 	}
 
 	@Override

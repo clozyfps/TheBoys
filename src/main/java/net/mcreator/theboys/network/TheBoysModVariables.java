@@ -102,6 +102,9 @@ public class TheBoysModVariables {
 			clone.DefenseEXP = original.DefenseEXP;
 			clone.DefenseCap = original.DefenseCap;
 			clone.DefenseLevel = original.DefenseLevel;
+			clone.Followers = original.Followers;
+			clone.MasteryExp = original.MasteryExp;
+			clone.MasteryCap = original.MasteryCap;
 			if (!event.isWasDeath()) {
 				clone.SpeedSoundCheck = original.SpeedSoundCheck;
 				clone.HeadSave = original.HeadSave;
@@ -184,6 +187,9 @@ public class TheBoysModVariables {
 		public double DefenseEXP = 0;
 		public double DefenseCap = 10.0;
 		public double DefenseLevel = 0;
+		public double Followers = 0;
+		public double MasteryExp = 0.0;
+		public double MasteryCap = 10.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -224,6 +230,9 @@ public class TheBoysModVariables {
 			nbt.putDouble("DefenseEXP", DefenseEXP);
 			nbt.putDouble("DefenseCap", DefenseCap);
 			nbt.putDouble("DefenseLevel", DefenseLevel);
+			nbt.putDouble("Followers", Followers);
+			nbt.putDouble("MasteryExp", MasteryExp);
+			nbt.putDouble("MasteryCap", MasteryCap);
 			return nbt;
 		}
 
@@ -261,6 +270,9 @@ public class TheBoysModVariables {
 			DefenseEXP = nbt.getDouble("DefenseEXP");
 			DefenseCap = nbt.getDouble("DefenseCap");
 			DefenseLevel = nbt.getDouble("DefenseLevel");
+			Followers = nbt.getDouble("Followers");
+			MasteryExp = nbt.getDouble("MasteryExp");
+			MasteryCap = nbt.getDouble("MasteryCap");
 		}
 	}
 
@@ -326,6 +338,9 @@ public class TheBoysModVariables {
 					variables.DefenseEXP = message.data.DefenseEXP;
 					variables.DefenseCap = message.data.DefenseCap;
 					variables.DefenseLevel = message.data.DefenseLevel;
+					variables.Followers = message.data.Followers;
+					variables.MasteryExp = message.data.MasteryExp;
+					variables.MasteryCap = message.data.MasteryCap;
 				}
 			});
 			context.setPacketHandled(true);

@@ -44,6 +44,22 @@
           "x": 186,
           "y": 44
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_followers_counter",
+          "text": {
+            "fixedValue": "",
+            "name": "FollowersCounter"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 172,
+          "y": 35
+        }
       }
     ],
     "gridSettings": {

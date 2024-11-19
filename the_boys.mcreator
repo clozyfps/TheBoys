@@ -3971,6 +3971,71 @@
         "files": []
       },
       "path": "~/Creative Tabs"
+    },
+    {
+      "name": "FollowersCounter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "followers_counter",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FollowersCounterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Celebrity",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "celebrity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/advancements/celebrity.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ForTheCrowd",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "for_the_crowd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/advancements/for_the_crowd.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FollowerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "follower_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FollowerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -4165,6 +4230,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Followers",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MasteryExp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "MasteryCap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
     }
   ],
   "sound_elements": [
@@ -4270,11 +4353,13 @@
       "item.the_boys.a_train_spawn_egg": "A Train Spawn Egg",
       "subtitles.lightflicker": "",
       "death.attack.heart.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.celebrity.title": "Celebrity",
       "subtitles.attack": "",
       "item.the_boys.compound_v": "Compound V",
       "effect.the_boys.stunned": "Stunned",
       "effect.the_boys.impact_frame": "Impact Frame",
       "entity.the_boys.civilian": "Civilian",
+      "advancements.celebrity.descr": "Reach 5k Followers",
       "item_group.the_boys.the_boys_items": "The Boys Items",
       "key.the_boys.talent": "Talent",
       "subtitles.boom": "",
@@ -4286,9 +4371,9 @@
       "effect.the_boys.blood_healing": "Blood Healing",
       "subtitles.clap": "",
       "subtitles.zoom": "",
-      "death.attack.bleed.player": "%1$s died whilst trying to escape %2$s",
-      "subtitles.heatrayactive": "",
       "subtitles.web": "",
+      "subtitles.heatrayactive": "",
+      "death.attack.bleed.player": "%1$s died whilst trying to escape %2$s",
       "effect.the_boys.laser_homelander": "Laser Homelander",
       "item.the_boys.empty_syringe": "Empty Syringe",
       "item.the_boys.blade": "Blade",
@@ -4307,6 +4392,7 @@
       "effect.the_boys.cooldown": "Cooldown",
       "entity.the_boys.criminal": "Criminal",
       "effect.the_boys.detect": "Detect",
+      "advancements.for_the_crowd.title": "For The Crowd",
       "block.the_boys.redstone_lamp_on": "Redstone Lamp On",
       "item.the_boys.test": "Test",
       "death.attack.pop": "%1$s was popped.",
@@ -4314,6 +4400,7 @@
       "effect.the_boys.slow_time": "Slow Time",
       "item.the_boys.compound_v_syringe": "Compound V Syringe",
       "death.attack.bleed.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.for_the_crowd.descr": "Stream For The First Time.",
       "entity.the_boys.homelander": "Homelander",
       "effect.the_boys.speed_burst": "Speed Burst",
       "subtitles.heatray": "",
@@ -4442,6 +4529,10 @@
       },
       {
         "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       }
     ]

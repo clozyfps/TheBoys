@@ -54,6 +54,46 @@ public class HomelanderSkillsProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_boys:heatray")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
+			{
+				double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryExp + 1;
+				entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.MasteryExp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if ((entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryExp >= (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new TheBoysModVariables.PlayerVariables())).MasteryCap) {
+				{
+					double _setval = 0;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.MasteryExp = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryCap + 0;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.MasteryCap = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).Mastery + 1;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Mastery = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7lMastery Upgraded"), false);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
 		} else if (((entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).CurrentTalent).equals("Flight")) {
 			if (!(entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).Flight) {
 				{
@@ -78,7 +118,47 @@ public class HomelanderSkillsProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(TheBoysModMobEffects.DETECT.get(), 99999, 0));
 		} else if (((entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).CurrentTalent).equals("Sonic Clap")) {
-			if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(TheBoysModMobEffects.COOLDOWN.get()))) {
+			{
+				double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryExp + 1;
+				entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.MasteryExp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if ((entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryExp >= (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new TheBoysModVariables.PlayerVariables())).MasteryCap) {
+				{
+					double _setval = 0;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.MasteryExp = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).MasteryCap + 0;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.MasteryCap = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					double _setval = (entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheBoysModVariables.PlayerVariables())).Mastery + 1;
+					entity.getCapability(TheBoysModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Mastery = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7lMastery Upgraded"), false);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+			}
+			if (!(entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(TheBoysModMobEffects.COOLDOWN.get()))) {
 				if (world.isClientSide()) {
 					if (entity instanceof AbstractClientPlayer player) {
 						var animation = (ModifierLayer<IAnimation>) PlayerAnimationAccess.getPlayerAssociatedData(player).get(new ResourceLocation("the_boys", "player_animation"));
