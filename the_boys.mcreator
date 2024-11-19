@@ -1,0 +1,4469 @@
+{
+  "mod_elements": [
+    {
+      "name": "CompoundV",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compound_v",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/compound_v.json",
+          "src/main/java/net/mcreator/theboys/item/CompoundVItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CompoundVPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compound_v_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CompoundVPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "OutputOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "output_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/OutputOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "Output",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "output",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/OutputMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "InvisPower",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_power",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/InvisPowerMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "InvisPowerEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_power_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/InvisPowerEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "InvisPowerOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_power_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/InvisPowerOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "InvisPowerEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_power_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/InvisPowerEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "SuperSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SuperSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "Blood",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/particles/blood.json",
+          "src/main/java/net/mcreator/theboys/client/particle/BloodParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "SetSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "TheBoysCommands",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_boys_commands",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/command/TheBoysCommandsCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetMastery",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mastery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetMasteryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "Heart",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/damage_type/heart.json"
+        ]
+      },
+      "path": "~/Damage"
+    },
+    {
+      "name": "HeartbeatOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartbeat_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HeartbeatOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "Heartbeat",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartbeat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/HeartbeatMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "BloodParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/particle/BloodParticleParticle.java",
+          "src/main/resources/assets/the_boys/particles/blood_particle.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "TalentOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "talent_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TalentOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "SlowTimeOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slow_time_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SlowTimeOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "SlowTime",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slow_time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/SlowTimeMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "Cooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/CooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "Talent",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "talent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/TalentMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CompoundVSyringe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compound_v_syringe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/compound_v_syringe.json",
+          "src/main/java/net/mcreator/theboys/item/CompoundVSyringeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AfterImage",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/AfterImageEntity.java",
+          "src/main/java/net/mcreator/theboys/client/renderer/AfterImageRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "AfterImageOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/AfterImageOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "AfterImageOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/AfterImageOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "SetHomeLander",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_home_lander",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetHomeLanderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "HomelanderPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_power",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderPowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "LaserTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/LaserTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "TalentOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "talent_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TalentOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "TestRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TestRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "Test",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/test.json",
+          "src/main/java/net/mcreator/theboys/item/TestItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "OutwardDustOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outward_dust_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/OutwardDustOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "OutwardDust",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outward_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/renderer/OutwardDustRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/OutwardDustEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "OutwardDustOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outward_dust_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/OutwardDustOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "SecondTalent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_talent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SecondTalentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "SetStarlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_starlight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetStarlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "RedstoneLampOn",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_lamp_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/block/RedstoneLampOnBlock.java",
+          "src/main/resources/data/the_boys/loot_tables/blocks/redstone_lamp_on.json",
+          "src/main/resources/assets/the_boys/models/item/redstone_lamp_on.json",
+          "src/main/resources/assets/the_boys/blockstates/redstone_lamp_on.json",
+          "src/main/resources/assets/the_boys/models/block/redstone_lamp_on.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StarlightUIPro",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_ui_pro",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StarlightUIProProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "StarlightUIDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_ui_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StarlightUIDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "StarlightChargeOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_charge_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StarlightChargeOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "StarlightBlastWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_blast_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StarlightBlastWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "StarlightBlast",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_blast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/StarlightBlastEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "StarlightChargeEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_charge_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StarlightChargeEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "StarlightCharge",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starlight_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/StarlightChargeMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "CompoundVSyringeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compound_v_syringe_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CompoundVSyringeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "SetSuperStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_super_strength",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetSuperStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SuperStrengthTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_strength_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SuperStrengthTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "SuperStrengthCrit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_strength_crit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SuperStrengthCritProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "FireParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/particles/fire_particle.json",
+          "src/main/java/net/mcreator/theboys/client/particle/FireParticleParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "BloodUiPro",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_ui_pro",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodUiProProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "BloodUIDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_ui_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodUIDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "BloodUI",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/BloodUIOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "BladeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blade_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BladeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "Blade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/blade.json",
+          "src/main/java/net/mcreator/theboys/item/BladeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BloodManipulationPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_manipulation_power",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodManipulationPowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "BleedingOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BleedingOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "Bleeding",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/BleedingMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "Bleed",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/damage_type/bleed.json"
+        ]
+      },
+      "path": "~/Damage"
+    },
+    {
+      "name": "BloodHealingOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_healing_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodHealingOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "BloodHealing",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/BloodHealingMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "BloodProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "BloodProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/BloodProjectileEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "BloodDropOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_drop_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodDropOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "BloodDropOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_drop_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodDropOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "BloodDrop",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_drop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/renderer/BloodDropRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/BloodDropEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "BleedAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BleedAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BasicResistance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_resistance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BasicResistanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SetBlood",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetBloodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "Pop",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/damage_type/pop.json"
+        ]
+      },
+      "path": "~/Damage"
+    },
+    {
+      "name": "Phone",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/PhoneButtonMessage.java",
+          "src/main/java/net/mcreator/theboys/world/inventory/PhoneMenu.java",
+          "src/main/java/net/mcreator/theboys/client/gui/PhoneScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "Instagram",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instagram",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/InstagramButtonMessage.java",
+          "src/main/java/net/mcreator/theboys/world/inventory/InstagramMenu.java",
+          "src/main/java/net/mcreator/theboys/client/gui/InstagramScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PhoneItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/phone_item.json",
+          "src/main/java/net/mcreator/theboys/item/PhoneItemItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PhoneItemRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/PhoneItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "LiveIcon",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/LiveIconOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "ViewersDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viewers_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ViewersDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "LiveIconDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_icon_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/LiveIconDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "ClickedIG",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clicked_ig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ClickedIGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "ClickedHome",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clicked_home",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ClickedHomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "StopLive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_live",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StopLiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "GoLive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "go_live",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/GoLiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "EmptySyringe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_syringe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/empty_syringe.json",
+          "src/main/java/net/mcreator/theboys/item/EmptySyringeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "VCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "v_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_boys/recipes/v_craft.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "GoLiveCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "go_live_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/GoLiveConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "FanTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fan_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FanTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "LiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/LiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "LiveTriggers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_triggers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/LiveTriggersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CivilianDisplayCondition8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_display_condition_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianDisplayCondition8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "Civilian",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/civilian_spawn_egg.json",
+          "src/main/resources/data/the_boys/forge/biome_modifier/civilian_biome_modifier.json",
+          "src/main/java/net/mcreator/theboys/entity/CivilianEntity.java",
+          "src/main/java/net/mcreator/theboys/client/renderer/CivilianRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "CivilianOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civilian_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CivilianOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayCondition2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayCondition3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayCondition4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayCondition5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "CriminalDisplayCondition6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_display_condition_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalDisplayCondition6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "Criminal",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/criminal_spawn_egg.json",
+          "src/main/java/net/mcreator/theboys/client/renderer/CriminalRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/CriminalEntity.java",
+          "src/main/resources/data/the_boys/forge/biome_modifier/criminal_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MasteryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mastery_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/MasteryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HomelanderOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "Homelander",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/model/HomelanderModel.java",
+          "src/main/resources/data/the_boys/forge/biome_modifier/homelander_biome_modifier.json",
+          "src/main/java/net/mcreator/theboys/client/renderer/HomelanderRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/HomelanderEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "HomelanderBeginFight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_begin_fight",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderBeginFightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "HomelanderStopFighting",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_stop_fighting",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderStopFightingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "HomelanderOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "LaserHomelanderOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_homelander_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/LaserHomelanderOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "LaserHomelander",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_homelander",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/LaserHomelanderMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "AbilityBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/AbilityBarOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "SwitchMove",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_move",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/SwitchMoveMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "SwitchCurrentMove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_current_move",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SwitchCurrentMoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "HomelanderSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers/Moves"
+    },
+    {
+      "name": "SuperSpeedSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_speed_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SuperSpeedSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers/Moves"
+    },
+    {
+      "name": "BloodManipulationSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_manipulation_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BloodManipulationSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers/Moves"
+    },
+    {
+      "name": "ATrainDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ATrainDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "HomelanderDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homelander_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/HomelanderDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "SelectedMove1Display",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_move_1_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SelectedMove1DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "SelectedMove2Display",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_move_2_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SelectedMove2DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "SelectedMove3Display",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_move_3_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SelectedMove3DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "SelectedMove4Display",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_move_4_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SelectedMove4DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "SelectedMove5Display",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selected_move_5_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SelectedMove5DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "AbilityBarDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_bar_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/AbilityBarDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "DetectOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detect_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/DetectOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "Detect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/DetectMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Wind",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/particles/wind.json",
+          "src/main/java/net/mcreator/theboys/client/particle/WindParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "SonicWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SonicWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "Sonic",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/SonicEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "TimeStop",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/renderer/TimeStopRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/TimeStopEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "TimeStopOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TimeStopOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "Stunned",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stunned",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/StunnedMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "TimeStopOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TimeStopOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "BurstWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burst_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/BurstWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "Burst",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/BurstEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "SpeedSkillBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_skill_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/SpeedSkillBarOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "SpeedBurst",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_burst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/SpeedBurstMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "SpeedBurstOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_burst_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SpeedBurstOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "AfterImageEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/AfterImageEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "SpeedBurstEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_burst_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SpeedBurstEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "AfterImageLongOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image_long_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/AfterImageLongOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "AfterImageLong",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "after_image_long",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/renderer/AfterImageLongRenderer.java",
+          "src/main/java/net/mcreator/theboys/entity/AfterImageLongEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ExtrasDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extras_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ExtrasDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "Extras",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extras",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/ExtrasOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "ImpactFrame",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "impact_frame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/ImpactFrameMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "ShaderTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shader_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ShaderTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Knockback",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockback",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/KnockbackEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "WebWeaverSkillBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_weaver_skill_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/WebWeaverSkillBarOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "WebWeaverSkillBarDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_weaver_skill_bar_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebWeaverSkillBarDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "WebParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/particle/WebParticleParticle.java",
+          "src/main/resources/assets/the_boys/particles/web_particle.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "WebShotWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_shot_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebShotWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "WebShotProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_shot_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebShotProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Particles/Procedures"
+    },
+    {
+      "name": "WebShot",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/WebShotEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "WebsTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "webs_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebsTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "WebSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers/Moves"
+    },
+    {
+      "name": "SetWeb",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_web",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetWebProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "CriminalOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "criminal_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/CriminalOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "WebBombWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_bomb_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebBombWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "WebPullWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_pull_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebPullWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "WebPullProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_pull_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/WebPullProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "WebBomb",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/WebBombEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "WebPull",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "web_pull",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/WebPullEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "FishDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlay/Procedures"
+    },
+    {
+      "name": "TheDeepSkillBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_deep_skill_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/client/screens/TheDeepSkillBarOverlay.java"
+        ]
+      },
+      "path": "~/Overlay"
+    },
+    {
+      "name": "FishTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers"
+    },
+    {
+      "name": "FishFire",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/FishFireMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "FishFireEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_fire_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishFireEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "FishFireOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_fire_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishFireOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "FishSkills",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Powers/Moves"
+    },
+    {
+      "name": "SetFish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/SetFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "FishShotWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shot_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/FishShotWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles/Procedures"
+    },
+    {
+      "name": "FishShot",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/entity/FishShotEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "TheBoysMobs",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_boys_mobs",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "ATrain",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_boys/models/item/a_train_spawn_egg.json",
+          "src/main/java/net/mcreator/theboys/entity/ATrainEntity.java",
+          "src/main/java/net/mcreator/theboys/client/renderer/ATrainRenderer.java",
+          "src/main/resources/data/the_boys/forge/biome_modifier/a_train_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "RandomSpeedBoost",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_speed_boost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/RandomSpeedBoostMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "RandomSpeedBoostOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_speed_boost_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/RandomSpeedBoostOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "ATrainOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_train_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/ATrainOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "EntityDodge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dodge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/EntityDodgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RandomSpeedBoostEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_speed_boost_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/RandomSpeedBoostEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "TrainingCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "training_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/potion/TrainingCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "TrainOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "train_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/TrainOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "Train",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "train",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/network/TrainMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "StatTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theboys/procedures/StatTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TheBoysItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_boys_items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Power",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Mastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Output",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpeedSoundCheck",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "HeadSave",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "ChestSave",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "LegSave",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "BootSave",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "VModifier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Move1",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Move2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CurrentTalent",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Laser",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "Flight",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "LightPower",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Blood",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Live",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "LiveViewers",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Reputation",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Popularity",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "LiveGeneration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HeroName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Move3",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Move4",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Move5",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "TrainingSwitch",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "StrengthEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "StrengthCap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "StrengthLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DefenseEXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DefenseCap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "DefenseLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "zoom",
+      "files": [
+        "a-train-zoom"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "dicesteak",
+      "files": [
+        "dicesteak"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "heartbeat",
+      "files": [
+        "heartbeatloop"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "boom",
+      "files": [
+        "boom"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "lightflicker",
+      "files": [
+        "light-flicker"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "attack",
+      "files": [
+        "audio_-_attack_sfx_-_creator_store"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "heatray",
+      "files": [
+        "beginheatray"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "heatrayactive",
+      "files": [
+        "heatrayactive"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "clap",
+      "files": [
+        "clap"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "web",
+      "files": [
+        "fabba"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ENTITIES:mod:civilian": [
+      "CUSTOM:Civilian"
+    ],
+    "ENTITIES:mod:good": [
+      "CUSTOM:ATrain"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Blade"
+    ],
+    "ENTITIES:mod:evil": [
+      "CUSTOM:Criminal"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.the_boys.after_image": "After Image",
+      "item.the_boys.a_train_spawn_egg": "A Train Spawn Egg",
+      "subtitles.lightflicker": "",
+      "death.attack.heart.item": "%1$s was killed by %2$s using %3$s",
+      "subtitles.attack": "",
+      "item.the_boys.compound_v": "Compound V",
+      "effect.the_boys.stunned": "Stunned",
+      "effect.the_boys.impact_frame": "Impact Frame",
+      "entity.the_boys.civilian": "Civilian",
+      "item_group.the_boys.the_boys_items": "The Boys Items",
+      "key.the_boys.talent": "Talent",
+      "subtitles.boom": "",
+      "gui.the_boys.instagram.button_sslgo_live": "§lGo Live",
+      "effect.the_boys.training_cooldown": "Training Cooldown",
+      "subtitles.dicesteak": "",
+      "death.attack.pop.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.heart.player": "%1$s died whilst trying to escape %2$s",
+      "effect.the_boys.blood_healing": "Blood Healing",
+      "subtitles.clap": "",
+      "subtitles.zoom": "",
+      "death.attack.bleed.player": "%1$s died whilst trying to escape %2$s",
+      "subtitles.heatrayactive": "",
+      "subtitles.web": "",
+      "effect.the_boys.laser_homelander": "Laser Homelander",
+      "item.the_boys.empty_syringe": "Empty Syringe",
+      "item.the_boys.blade": "Blade",
+      "death.attack.bleed": "%1$s bled to death.",
+      "effect.the_boys.fish_fire": "Fish Fire",
+      "subtitles.heartbeat": "",
+      "item.the_boys.phone_item": "Phone",
+      "death.attack.pop.player": "%1$s died whilst trying to escape %2$s",
+      "effect.the_boys.invis_power": "Invis Power",
+      "entity.the_boys.outward_dust": "Outward Dust",
+      "item.the_boys.homelander_spawn_egg": "Homelander Spawn Egg",
+      "effect.the_boys.starlight_charge": "Starlight Charge",
+      "key.the_boys.train": "Train",
+      "entity.the_boys.blood_drop": "Blood Drop",
+      "item_group.the_boys.the_boys_mobs": "The Boys Mobs",
+      "effect.the_boys.cooldown": "Cooldown",
+      "entity.the_boys.criminal": "Criminal",
+      "effect.the_boys.detect": "Detect",
+      "block.the_boys.redstone_lamp_on": "Redstone Lamp On",
+      "item.the_boys.test": "Test",
+      "death.attack.pop": "%1$s was popped.",
+      "entity.the_boys.a_train": "A Train",
+      "effect.the_boys.slow_time": "Slow Time",
+      "item.the_boys.compound_v_syringe": "Compound V Syringe",
+      "death.attack.bleed.item": "%1$s was killed by %2$s using %3$s",
+      "entity.the_boys.homelander": "Homelander",
+      "effect.the_boys.speed_burst": "Speed Burst",
+      "subtitles.heatray": "",
+      "death.attack.heart": "%1$s\u0027s heart exploded",
+      "effect.the_boys.random_speed_boost": "Random Speed Boost",
+      "gui.the_boys.instagram.button_sslendlive": "§lEndLive",
+      "entity.the_boys.after_image_long": "After Image Long",
+      "key.the_boys.output": "Output",
+      "item.the_boys.civilian_spawn_egg": "Civilian Spawn Egg",
+      "effect.the_boys.heartbeat": "Heartbeat",
+      "item.the_boys.criminal_spawn_egg": "Criminal Spawn Egg",
+      "effect.the_boys.bleeding": "Bleeding",
+      "key.the_boys.switch_move": "Switch Move",
+      "entity.the_boys.time_stop": "Time Stop"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Procedures",
+        "children": [
+          {
+            "name": "Powers",
+            "children": [
+              {
+                "name": "Moves",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Keybinds",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potions",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Particles",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Damage",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Projectiles",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Overlay",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipe",
+        "children": []
+      },
+      {
+        "name": "Creative Tabs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "the_boys",
+    "modName": "The boys",
+    "version": "1.0.0",
+    "author": "jayso, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.theboys"
+  },
+  "mcreatorVersion": 202400232117
+}

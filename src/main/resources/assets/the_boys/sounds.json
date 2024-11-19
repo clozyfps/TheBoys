@@ -1,0 +1,82 @@
+{
+  "zoom": {
+    "sounds": [
+      {
+        "name": "the_boys:a-train-zoom",
+        "stream": false
+      }
+    ]
+  },
+  "dicesteak": {
+    "sounds": [
+      {
+        "name": "the_boys:dicesteak",
+        "stream": false
+      }
+    ]
+  },
+  "heartbeat": {
+    "sounds": [
+      {
+        "name": "the_boys:heartbeatloop",
+        "stream": false
+      }
+    ]
+  },
+  "boom": {
+    "sounds": [
+      {
+        "name": "the_boys:boom",
+        "stream": false
+      }
+    ]
+  },
+  "lightflicker": {
+    "sounds": [
+      {
+        "name": "the_boys:light-flicker",
+        "stream": false
+      }
+    ]
+  },
+  "attack": {
+    "sounds": [
+      {
+        "name": "the_boys:audio_-_attack_sfx_-_creator_store",
+        "stream": false
+      }
+    ]
+  },
+  "heatray": {
+    "sounds": [
+      {
+        "name": "the_boys:beginheatray",
+        "stream": false
+      }
+    ]
+  },
+  "heatrayactive": {
+    "sounds": [
+      {
+        "name": "the_boys:heatrayactive",
+        "stream": false
+      }
+    ]
+  },
+  "clap": {
+    "sounds": [
+      {
+        "name": "the_boys:clap",
+        "stream": false
+      }
+    ]
+  },
+  "web": {
+    "sounds": [
+      {
+        "name": "the_boys:fabba",
+        "stream": false
+      }
+    ]
+  }
+}

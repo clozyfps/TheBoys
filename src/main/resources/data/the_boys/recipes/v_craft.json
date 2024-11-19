@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "the_boys:compound_v"
+    },
+    {
+      "item": "the_boys:empty_syringe"
+    }
+  ],
+  "result": {
+    "item": "the_boys:compound_v_syringe",
+    "count": 1
+  }
+}

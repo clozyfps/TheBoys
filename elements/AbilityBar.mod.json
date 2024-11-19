@@ -1,0 +1,99 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "homelandernewbar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HomelanderDisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
+          "y": 209
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SelectedMove1Display"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 5,
+          "y": 208
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SelectedMove4Display"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 58,
+          "y": 208
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SelectedMove2Display"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 22,
+          "y": 208
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SelectedMove3Display"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 39,
+          "y": 208
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SelectedMove5Display"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 76,
+          "y": 208
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "HomelanderDisplay"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

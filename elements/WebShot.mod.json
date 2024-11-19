@@ -1,0 +1,25 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.WEB"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:web"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 3.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "WebShotProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "WebShotWhileProjectileFlyingTick"
+    }
+  }
+}

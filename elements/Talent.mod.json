@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F",
+    "keyBindingName": "Talent",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TalentOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "TalentOnKeyReleased"
+    }
+  }
+}

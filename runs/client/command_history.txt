@@ -1,0 +1,50 @@
+/theboys power Dev Speed
+/setworldspawn
+/kill
+/fill 13 -56 -3
+/fill 13 -56 -3 27 -61 -3 minecraft:birch_wood
+/fill 13 -56 -3 27 -61 -3 minecraft:oak_planks
+/fill 13 -56 3
+/fill 13 -56 3 27 -56 -3 minecraft:oak_planks
+/fill 27 -57 3
+/fill 27 -57 3 14 -59 3 minecraft:oak_planks
+/theboys power Dev Starlight
+/theboys power Dev Homelander
+/theboys power Dev Speed
+/theboys power Dev Homelander
+/theboys power Dev Speed
+/theboys power Dev Starlight
+/theboys power Dev Speed
+/theboys power Dev Starlight
+/theboys power Dev Speed
+/effect give Dev minecraft:resistance infinite 250 true
+/give Dev the_boys:compound_v
+/give Dev the_boys:compound_v_syringe
+/theboys mastery Dev 100
+/theboys mastery Dev 1
+/theboys mastery Dev 10
+/theboys power Dev Strength
+/kill
+/theboys power Dev Speed
+/theboys mastery Dev 100
+/theboys mastery Dev 10
+/theboys power Dev Homelander
+/theboys power Dev Strength
+/theboys power Dev Starlight
+/theboys power Dev Homelander
+/theboys power Dev Speed
+/theboys mastery Dev 100
+/effect give Dev minecraft:speed infinite 255 true
+/theboys power Dev Strength
+/effect clear
+/theboys power Dev Homelander
+/theboys power Dev Strength
+/theboys power Dev Starlight
+/effect clear
+/theboys power Dev Blood
+/give Dev the_boys:blade
+/effect give @e the_boys:bleeding infinite 1 true
+/give Dev the_boys:blade
+/effect give @e the_boys:bleeding infinite 1 true
+/effect clear
+/kill

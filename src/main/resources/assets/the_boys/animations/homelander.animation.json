@@ -1,0 +1,854 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"flight": {
+			"animation_length": 1.7917,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [-2, 0, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorBody": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 1]
+						},
+						"0.7083": {
+							"vector": [0, 2, 1]
+						},
+						"1.5417": {
+							"vector": [0, 0, 1]
+						}
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [0, 0, 12.5]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 1]
+						},
+						"0.7083": {
+							"vector": [0, 2, 1]
+						},
+						"1.5417": {
+							"vector": [0, 0, 1]
+						}
+					}
+				},
+				"armorLeftLeg": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorLeftBoot": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightLeg": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightBoot": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [0, 2, 0]
+						},
+						"1.5417": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"flightmove": {
+			"animation_length": 1.5417,
+			"bones": {
+				"armorRightArm": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [0, 0, 12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"armorLeftLeg": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorLeftBoot": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"vector": [18, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, 0]
+					}
+				},
+				"armorRightBoot": {
+					"rotation": {
+						"vector": [18, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, 0]
+					}
+				},
+				"Cape": {
+					"rotation": {
+						"vector": [12.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 3]
+					}
+				}
+			}
+		},
+		"lasereyesflight": {
+			"animation_length": 0.5,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [0, 0, 12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"armorLeftLeg": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorLeftBoot": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"vector": [18, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, 0]
+					}
+				},
+				"armorRightBoot": {
+					"rotation": {
+						"vector": [18, 0, 0]
+					},
+					"position": {
+						"vector": [0, 3, 0]
+					}
+				},
+				"Cape": {
+					"rotation": {
+						"vector": [12.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 3]
+					}
+				}
+			}
+		},
+		"homelanderidle": {
+			"loop": true,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [0, 0, 12.5]
+					},
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				},
+				"Cape": {
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				}
+			}
+		},
+		"homelanderwalk": {
+			"animation_length": 1.0833,
+			"bones": {
+				"armorRightArm": {
+					"rotation": {
+						"vector": [0, 0, -12.5]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 1]
+						},
+						"0.5833": {
+							"vector": [0, 1, 1]
+						},
+						"1.0833": {
+							"vector": [0, 0, 1]
+						}
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [0, 0, 12.5]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 1]
+						},
+						"0.5833": {
+							"vector": [0, 1, 1]
+						},
+						"1.0833": {
+							"vector": [0, 0, 1]
+						}
+					}
+				},
+				"armorLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [10, 0, 0]
+						},
+						"0.875": {
+							"vector": [-10, 0, 0]
+						}
+					}
+				},
+				"armorLeftBoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [10, 0, 0]
+						},
+						"0.875": {
+							"vector": [-10, 0, 0]
+						}
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [-10, 0, 0]
+						},
+						"0.875": {
+							"vector": [10, 0, 0]
+						}
+					}
+				},
+				"armorRightBoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [-10, 0, 0]
+						},
+						"0.875": {
+							"vector": [10, 0, 0]
+						}
+					}
+				},
+				"Cape": {
+					"position": {
+						"vector": [0, 0, 1]
+					}
+				}
+			}
+		},
+		"homelanderbeginflight": {
+			"animation_length": 1,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						},
+						"0.7083": {
+							"vector": [0, -2, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorBody": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [7.5, 0, 0]
+						},
+						"0.7083": {
+							"vector": [7.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						},
+						"0.7083": {
+							"vector": [0, -2, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 187.5]
+						},
+						"0.7083": {
+							"vector": [0, 0, 187.5]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [-4, 2, 0]
+						},
+						"0.7083": {
+							"vector": [-4, 2, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, -187.5]
+						},
+						"0.7083": {
+							"vector": [0, 0, -187.5]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [4, 1, 0]
+						},
+						"0.7083": {
+							"vector": [4, 1, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorLeftLeg": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						},
+						"0.7083": {
+							"vector": [0, -2, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorLeftBoot": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -1, 0]
+						},
+						"0.7083": {
+							"vector": [0, -1, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightLeg": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						},
+						"0.7083": {
+							"vector": [0, -2, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorRightBoot": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -1, 0]
+						},
+						"0.7083": {
+							"vector": [0, -1, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"homelanderpunch": {
+			"animation_length": 0.7917,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.6667": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorBody": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 22.5, 0]
+						},
+						"0.3333": {
+							"vector": [0, 25, 0]
+						},
+						"0.5": {
+							"vector": [10, -20, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-24.32269, 23.92746, 26.341]
+						},
+						"0.3333": {
+							"vector": [0.01756, 32.24946, 56.17636]
+						},
+						"0.5": {
+							"vector": [-89.566, -20.90886, 18.61899]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-5, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -12.5, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorLeftBoot": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"armorRightBoot": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"homelanderland": {
+			"animation_length": 1,
+			"bones": {
+				"armorHead": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2917": {
+							"vector": [60, 0, 0]
+						},
+						"0.5": {
+							"vector": [75, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 40.67, -5]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armorBody": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2917": {
+							"vector": [37.5, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 39.67, -7]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						}
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -12.5]
+						},
+						"0.2917": {
+							"vector": [35.7935, -12.0174, -28.6064]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 1]
+						},
+						"0.2917": {
+							"vector": [-2, 41.67, -6]
+						},
+						"0.5": {
+							"vector": [-2, -1, 2]
+						}
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 12.5]
+						},
+						"0.2917": {
+							"vector": [35.79355, -12.0174, 28.60644]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 1]
+						},
+						"0.2917": {
+							"vector": [2, 41.67, -6]
+						},
+						"0.5": {
+							"vector": [2, -1, 1]
+						}
+					}
+				},
+				"armorLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2917": {
+							"vector": [22.5, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 41.67, -3]
+						},
+						"0.5": {
+							"vector": [0, 0, 6]
+						}
+					}
+				},
+				"armorLeftBoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2917": {
+							"vector": [22.5, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 41.67, -3]
+						},
+						"0.5": {
+							"vector": [0, 0, 6]
+						}
+					}
+				},
+				"armorRightLeg": {
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 41.67, -2]
+						},
+						"0.5": {
+							"vector": [0, 0, 7]
+						}
+					}
+				},
+				"armorRightBoot": {
+					"position": {
+						"0.0": {
+							"vector": [0, 100, 0]
+						},
+						"0.2917": {
+							"vector": [0, 41.67, -2]
+						},
+						"0.5": {
+							"vector": [0, 0, 7]
+						}
+					}
+				},
+				"Cape": {
+					"rotation": {
+						"0.0": {
+							"vector": [110.88852, 16.41371, 6.15491]
+						},
+						"0.2917": {
+							"vector": [0, 0, -22.5]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [2, 17, 9]
+						},
+						"0.2917": {
+							"vector": [2.83, -1.92, 4.33]
+						},
+						"0.5": {
+							"vector": [0, 0, 1]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

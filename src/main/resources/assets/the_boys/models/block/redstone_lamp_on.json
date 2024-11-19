@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_boys:block/redstone_lamp_on",
+    "up": "the_boys:block/redstone_lamp_on",
+    "north": "the_boys:block/redstone_lamp_on",
+    "east": "the_boys:block/redstone_lamp_on",
+    "south": "the_boys:block/redstone_lamp_on",
+    "west": "the_boys:block/redstone_lamp_on",
+    "particle": "the_boys:block/redstone_lamp_on"
+  },
+  "render_type": "solid"
+}

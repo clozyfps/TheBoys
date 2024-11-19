@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "N",
+    "keyBindingName": "Train",
+    "keyBindingCategoryKey": "theboys",
+    "onKeyPressed": {
+      "name": "TrainOnKeyPressed"
+    }
+  }
+}

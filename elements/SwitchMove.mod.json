@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Switch Move",
+    "keyBindingCategoryKey": "theboys",
+    "onKeyPressed": {
+      "name": "SwitchCurrentMove"
+    }
+  }
+}
